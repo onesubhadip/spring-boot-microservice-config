@@ -1,0 +1,20 @@
+logging:
+  level:
+    org.springframework.cloud: 'DEBUG'
+
+zuul:
+  debug:
+    request: true
+  ignoredServices: '*'
+  routes:
+    api-user-service:
+      path: /users/**
+      serviceId: api-user-service
+
+server:
+  port: 9000
+
+eureka:
+  instance:
+    statusPageUrlPath: /actuator/info
+    healthCheckUrlPath: /actuator/health
