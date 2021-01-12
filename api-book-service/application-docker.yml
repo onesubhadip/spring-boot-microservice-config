@@ -4,11 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      authentication-database: "admin"
       host: "mongo"
-      database: "book-service-db"
-      username: "root"
-      password: "secret"
 
 eureka:
   client:

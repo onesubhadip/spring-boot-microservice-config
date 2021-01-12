@@ -1,6 +1,10 @@
 spring:
-  application:
-    name: api-book-service
+  data:
+    mongodb:
+      authentication-database: "admin"
+      database: "book-service-db"
+      username: "root"
+      password: "secret"
 
 eureka:
   client:

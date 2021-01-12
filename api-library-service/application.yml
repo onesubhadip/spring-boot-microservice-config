@@ -1,7 +1,3 @@
-spring:
-  application:
-    name: api-library-service
-
 eureka:
   client:
     register-with-eureka: true
